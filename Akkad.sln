@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akkad", "Akkad\Akkad.csproj", "{92A808CC-DB65-46BC-8E11-A5924E3671FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkkadTest", "AkkadTest\AkkadTest.csproj", "{F4CB25B4-A73F-4352-AFB8-0AF3FA0AD533}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92A808CC-DB65-46BC-8E11-A5924E3671FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92A808CC-DB65-46BC-8E11-A5924E3671FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92A808CC-DB65-46BC-8E11-A5924E3671FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92A808CC-DB65-46BC-8E11-A5924E3671FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4CB25B4-A73F-4352-AFB8-0AF3FA0AD533}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4CB25B4-A73F-4352-AFB8-0AF3FA0AD533}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4CB25B4-A73F-4352-AFB8-0AF3FA0AD533}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4CB25B4-A73F-4352-AFB8-0AF3FA0AD533}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
