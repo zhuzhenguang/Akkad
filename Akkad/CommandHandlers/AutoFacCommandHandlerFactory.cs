@@ -1,5 +1,4 @@
-﻿using System;
-using Akkad.Commands;
+﻿using Akkad.Commands;
 using Autofac;
 
 namespace Akkad.CommandHandlers
@@ -17,5 +16,12 @@ namespace Akkad.CommandHandlers
         {
             return _componentContext.Resolve<ICommandHandler<TCommand>>();
         }
+
+        /*public ICommandHandler<ICommand> Get(ICommand command)
+        {
+            var commandHandlerType = typeof(ICommandHandler<>);
+            var commandHandlerGenericType = commandHandlerType.MakeGenericType(command.GetType());
+            return (ICommandHandler<ICommand>) _componentContext.Resolve(commandHandlerGenericType);
+        }*/
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Akkad.Commands;
 using Akkad.Domain;
 
@@ -13,11 +14,16 @@ namespace Akkad.Resources
             _commandBus = commandBus;
         }
 
-        public UserId Create(string name)
+        public Task<UserId> Create(string name)
         {
             var createUserCommand = new CreateUserCommand(name);
-            _commandBus.Send(createUserCommand);
-            return new UserId(createUserCommand.AggregateId);
+            var result = _commandBus.SendAsync(createUserCommand).Result;
+
+            if (result.IsSuccess())
+            {
+                throw new Exception(result.ErrorMessage);
+            }
+            return new Task<UserId>(() => new UserId(createUserCommand.AggregateId));
         }
     }
 }

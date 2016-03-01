@@ -6,5 +6,6 @@ namespace Akkad.CommandHandlers
     public interface ICommandHandlerFactory
     {
         ICommandHandler<TCommand> Get<TCommand>() where TCommand : ICommand;
+        //ICommandHandler<ICommand> Get(ICommand command);
     }
 }
